@@ -20,7 +20,7 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         options: {
           ...statePart.options,
-          ...action.payload,
+          ...action.payload.option,
         },
       };
     default:
